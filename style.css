@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  
+  .campo {
+    margin: 10px 0;
+  }
+  
+  .mensagem {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
