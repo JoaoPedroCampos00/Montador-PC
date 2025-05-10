@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Montador de PC</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -14,27 +13,24 @@
 
     <section class="card-grid">
 
-      <!-- Placa Mãe -->
       <div class="card">
         <h2>Placa Mãe</h2>
         <select id="placa-mae">
           <option value="">Selecione uma placa mãe</option>
-          <option value="amd">ASUS Prime B450M</option>
-          <option value="intel">Gigabyte B660M</option>
+          <option value="amd">ASUS Prime B450M (AMD)</option>
+          <option value="intel">Gigabyte B660M (Intel)</option>
         </select>
       </div>
 
-      <!-- Processador -->
       <div class="card">
         <h2>Processador</h2>
         <select id="processador">
           <option value="">Selecione um processador</option>
-          <option value="amd">Ryzen 5 5600</option>
-          <option value="intel">Intel i5 12400F</option>
+          <option value="amd">Ryzen 5 5600 (AMD)</option>
+          <option value="intel">Intel i5 12400F (Intel)</option>
         </select>
       </div>
 
-      <!-- Memória RAM -->
       <div class="card">
         <h2>Memória RAM</h2>
         <select id="ram">
@@ -44,7 +40,6 @@
         </select>
       </div>
 
-      <!-- Placa de Vídeo -->
       <div class="card">
         <h2>Placa de Vídeo</h2>
         <select id="gpu">
@@ -56,16 +51,20 @@
 
     </section>
 
-    <!-- Botão de Verificar Compatibilidade -->
     <div style="text-align: center; margin-top: 2rem;">
-      <button onclick="verificarCompatibilidade()">
-        Verificar Compatibilidade
-      </button>
+      <button onclick="verificarCompatibilidade()">Verificar Compatibilidade</button>
     </div>
 
-    <!-- Resultado -->
-    <div id="resultado" class="card" style="margin-top: 2rem; text-align: center;">
+    <div id="resultado" class="card">
       <p>Resultado da compatibilidade aparecerá aqui.</p>
+    </div>
+
+    <!-- Seção de cadastro -->
+    <div id="cadastro">
+      <p>Coloque seu e-mail aqui para ser notificado quando o site estiver completo:</p>
+      <input type="email" id="email" placeholder="Seu e-mail" />
+      <button onclick="cadastrarEmail()">Cadastrar</button>
+      <p id="mensagem-email" style="margin-top: 1rem;"></p>
     </div>
   </div>
 
