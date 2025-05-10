@@ -110,4 +110,19 @@ const processadores = [
       sel(id).innerHTML = "<option value=''>Selecione</option>";
     });
   }
+<form id="formulario">
+  <input type="text" id="campo" placeholder="Digite algo" class="border p-2">
+  <button type="submit" class="bg-blue-500 text-white px-4 py-2">Enviar</button>
+</form>
+
+<script>
+  document.getElementById("formulario").addEventListener("submit", function(event) {
+    const campo = document.getElementById("campo").value;
+    if (!campo) {
+      alert("Por favor, preencha o campo.");
+      event.preventDefault();
+    }
+  });
+</script>
+
   
